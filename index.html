@@ -1,22 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>About Julia Brown</title>
-</head>
-<body>
-    <h1>Julia's Portfolio</h1>
-    <h4>About Me</h4>
-    
-    <img src="julpic.jpg" alt="Picture of Julia Brown">
-    <p>Back in high school I took a course on HTML, but it wasn't 
-        until recently that I'd really started to get interested in coding.
-        I am currently working full time as a Supply Planner and taking the
-        MIT xPro class on Full Stack Development part time in order to try 
-        to gain a new skill that I think I will really enjoy!</p>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Julia Brown's Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-nav" id="navbarLinks">
+                    <a href="#" class="nav-link active" aria-current="page">About Me</a>
+                    <span class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="ProjDropdown" role="button" data-bs-toggle="dropdown">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="ProjDropdown">
+                            <li><a href="projects.html" class="dropdown-item">Projects Overview</a></li>
+                            <li><a href="https://github.com/julbrown/PacMan-Exercise" class="dropdown-item">Pac Man</a></li>
+                            <li><a href="https://github.com/julbrown/Eye-Movement-Exercise" class="dropdown-item">Eyes</a></li>
+                            <li><a href="https://github.com/julbrown/Real-Time-Bus-Tracker" class="dropdown-item">Tracker</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <i hidden class="bi-brightness-alt-high" role="img" aria-label="Light Mode"></i>
+                <i hidden class="bi-moon-fill" role="img" aria-label="Dark Mode"></i>
+            </div>
+        </nav>
+
+        <main class="container about-me">
+            <header>
+                <h4>About Me</h4>
+            </header>
+            <!--Picture and intro-->
+            <div class="card my-pic">
+                <img class="card-img-top" src="pics/julpic.jpg" alt="Picture of Julia Brown">
+                <div class="card-body bg-light">
+                    <h5 class="card-title">Hi! I'm Julia Brown</h5>
+                    <p class="card-text">Back in high school I took a course on HTML, but it wasn't until recently that I'd really started to get interested in coding or web design.
+                    I am currently working full time as a Supply Planner and taking the MIT xPro class on Full Stack Development part time in order to try to gain a new skill that 
+                    I think I will really enjoy!</p>
+                </div>
+            </div>
+            <!--Placeholder for my embedded video-->
+            <div class="bg-dark">Embed video</div>
+            <!--Project preview carousel-->
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://github.com/julbrown/PacMan-Exercise"><img src="pics/PacMan1.png" class="d-block w-100 project-pics" alt="A picture of Pac-Man"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Latest Projects</h5>
+                            <p>Pac-Man runs across the screen</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/julbrown/Eye-Movement-Exercise"><img src="pics/eyes.png" class="d-block w-100 project-pics" alt="Two eyes on a dark background"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Latest Projects</h5>
+                            <p>Eyes follow the movement of your mouse</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/julbrown/Real-Time-Bus-Tracker"><img src="pics/bus.PNG" class="d-block w-100 project-pics" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Latest Projects</h5>
+                            <p>An animated marker tracks a bus route</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!--Contact-->
+            <footer>
+                <h6>Links and contact: </h6>
+                <a class="contact-methods" href="https://github.com/julbrown"><i class="bi-github" role="img" aria-label="GitHub"> julbrown</i></a>
+                <a class="contact-methods" href="https://www.linkedin.com/in/julia-brown-a22132114"><i class="bi-linkedin" role="img" aria-label="LinkedIn"></i></a>
+                <a href="mailto:k3rras@gmail.com"><i class="bi-envelope" role="img" aria-label="e-mail"></i></a>
+            </footer>
+        </main >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>

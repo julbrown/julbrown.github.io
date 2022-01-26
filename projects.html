@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Julia Brown's Projects</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-nav" id="navbarLinks">
+                    <a href="index.html" class="nav-link" aria-current="page">About Me</a>
+                    <span class="nav-item dropdown">
+                        <a href="#" class="nav-link active dropdown-toggle" id="ProjDropdown" role="button" data-bs-toggle="dropdown">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="ProjDropdown">
+                            <li><a href="projects.html" class="dropdown-item active">Projects Overview</a></li>
+                            <li><a href="https://github.com/julbrown/PacMan-Exercise" class="dropdown-item">Pac Man</a></li>
+                            <li><a href="https://github.com/julbrown/Eye-Movement-Exercise" class="dropdown-item">Eyes</a></li>
+                            <li><a href="https://github.com/julbrown/Real-Time-Bus-Tracker" class="dropdown-item">Tracker</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <i hidden class="bi-brightness-alt-high" role="img" aria-label="Light Mode"></i>
+                <i hidden class="bi-moon-fill" role="img" aria-label="Dark Mode"></i>
+            </div>
+        </nav>
+        <main class="container projects">
+            <header>
+                <h4>Portfolio Projects</h4>
+            </header>
+            <div class="card mb-3">
+                <img src="pics/PacMan1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="https://github.com/julbrown/PacMan-Exercise"><h5 class="card-title">Pac-Man Exercise</h5></a>
+                    <p class="card-text">In this project, Pac-Man will run back and forth across the screen when you click on him.  Clicking him more makes him go faster.  It uses HTML and JavaScript. JavaScript is used to populate the CSS.</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="pics/eyes.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="https://github.com/julbrown/Eye-Movement-Exercise"><h5 class="card-title">Eye Movement Exercise</h5></a>
+                    <p class="card-text">In this project, eyes will follow the movement of the mouse when it is over the page.  This uses HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="pics/bus.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="https://github.com/julbrown/Real-Time-Bus-Tracker"><h5 class="card-title">Real Time Bus Tracker Exercise</h5></a>
+                    <p class="card-text">In this project, map markers are animated to move to follow a bus route.  This uses HTML, CSS, and JavaScript as well as Mapbox.</p>
+                </div>
+            </div>
+        </main>
+        <!--Contact-->
+        <footer>
+            <h6>Links and contact: </h6>
+            <a class="contact-methods" href="https://github.com/julbrown"><i class="bi-github" role="img" aria-label="GitHub"> julbrown</i></a>
+            <a class="contact-methods" href="https://www.linkedin.com/in/julia-brown-a22132114"><i class="bi-linkedin" role="img" aria-label="LinkedIn"></i></a>
+            <a href="mailto:k3rras@gmail.com"><i class="bi-envelope" role="img" aria-label="e-mail"></i></a>
+        </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
